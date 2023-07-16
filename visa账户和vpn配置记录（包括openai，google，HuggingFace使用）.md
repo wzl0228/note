@@ -1,5 +1,5 @@
 # visa
-申请Dupay虚拟卡：[Dupay](https://www.dupay.one/web-app/register-h5)
+账户申请，Dupay虚拟卡：[Dupay](https://www.dupay.one/web-app/register-h5)
 
 注意：
 
