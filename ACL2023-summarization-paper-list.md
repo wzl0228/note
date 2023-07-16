@@ -1,4 +1,4 @@
-## 摘要相关论文（"summar..."）
+## 摘要相关论文（"summar..." in ACL2023 Main Conference）
 1. What are the Desired Characteristics of Calibration Sets? Identifying Correlates on Long Form Scientific Summarization
 2. Generating EDU Extracts for Plan-Guided Summary Re-Ranking
 3. CrossSum: Beyond English-Centric Cross-Lingual Summarization for 1,500+ Language Pairs
@@ -40,7 +40,7 @@
 39. Summarizing, Simplifying, and Synthesizing Medical Evidence using GPT-3 (with Varying Success)
 40. Balancing Lexical and Semantic Quality in Abstractive Summarization
 41. Abstractive Summarizers are Excellent Extractive Summarizers
-## 评估方法相关论文（挑选部分）
+## 评估方法相关论文（挑选部分 "eval..." in ACL2023 Main Conference）
 1. REV: Information-Theoretic Evaluation of Free-Text Rationales
 2. Can Large Language Models Be an Alternative to Human Evaluations?
 3. FairPrism: Evaluating Fairness-Related Harms in Text Generation
@@ -59,4 +59,9 @@
 16. SESCORE2: Learning Text Generation Evaluation via Synthesizing Realistic Mistakes
 27. Are Human Explanations Always Helpful? Towards Objective Evaluation of Human Natural Language Explanations
 ## 其余论文（挑选部分）
-1.
+Outstanding:
+1. Backpack Language Models
+2. Cognitive Reframing of Negative Thoughts through Human-Language Model Interaction
+3. Do PLMs Know and Understand Ontological Knowledge?
+4. Don’t Generate, Discriminate: A Proposal for Grounding Language Models to Real-World Environments
+5. World-to-Words: Grounded Open Vocabulary Acquisition through Fast Mapping in Vision-Language Models
