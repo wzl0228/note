@@ -1,5 +1,6 @@
 # Attributable and Scalable Opinion Summarization
 [原论文地址](https://aclanthology.org/2023.acl-long.473.pdf)
+
 [数据集和代码地址](https://github.com/tomhosking/hercules)
 
 ## 评论聚合（意见摘要）面临的挑战
