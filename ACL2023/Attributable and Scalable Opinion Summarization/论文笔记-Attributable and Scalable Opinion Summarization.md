@@ -47,6 +47,9 @@ q1:D离散，但大多数神经方法在连续空间中操作。定义从编码�
 
 q1:D旨在表示分层信息，因此每个层级编码上的分布是softmax分布，得分sd由从每个codebook embedding到（输入和所有先前级别的累积embeddings之间的残差）的L2距离得出。
 
+![image](4.png)
+
+
 
 
 
