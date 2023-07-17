@@ -4,7 +4,7 @@
 2. Generating EDU Extracts for Plan-Guided Summary Re-Ranking
 3. CrossSum: Beyond English-Centric Cross-Lingual Summarization for 1,500+ Language Pairs
 4. SIMSUM: Document-level Text Simplification via Simultaneous Summarization
-5. [From Key Points to Key Point Hierarchy: Structured and Expressive Opinion Summarization](https://arxiv.org/abs/2306.03853)
+5. From Key Points to Key Point Hierarchy: Structured and Expressive Opinion Summarization
 6. Improving the Robustness of Summarization Systems with Dual Augmentation
 7. UniSumm and SummZoo: Unified Model and Diverse Benchmark for Few-Shot Summarization
 8. Revisiting Cross-Lingual Summarization: A Corpus-based Study and A New Benchmark with Improved Annotation
@@ -12,7 +12,7 @@
 10. Reference Matters: Benchmarking Factual Error Correction for Dialogue Summarization with Fine-grained Evaluation Framework
 11. Dialogue Summarization with Static-Dynamic Structure Fusion Graph
 12. Z-Code++: A Pre-trained Language Model Optimized for Abstractive Summarization
-13. Attributable and Scalable Opinion Summarization
+13. [Attributable and Scalable Opinion Summarization](https://aclanthology.org/2023.acl-long.473.pdf)
 14. MeetingBank: A Benchmark Dataset for Meeting Summarization
 15. ExplainMeetSum: A Dataset for Explainable Meeting Summarization Aligned with Human Intent
 16. Do You Hear The People Sing? Key Point Analysis via Iterative Clustering and Abstractive Summarisation
