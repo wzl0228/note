@@ -16,17 +16,7 @@
 
 ![image](https://github.com/wzl0228/note/assets/80249917/69bf83f8-c3b0-4b14-959e-91c95db89b84)
 
-训练（上）：将评论中的句子编码为（在分层离散潜在空间的）路径。如将“Tasty burgers” 编码为（中间部分）像“树”一样形状的其中一部分，在图中用黑色实线表示。
+训练（顶部）：将评论中的句子编码为（在分层离散潜在空间的）路径。图中将“Tasty burgers” 编码为（中间部分）像“树”一样形状的其中一部分，用黑色实线表示。
 
-推理（下）：对输入评论中的所有句子进行编码，并确定用于摘要的频繁路径或子路径（底部）。来自三个示例输入的一致意见是，食物是好的，因此红色显示的子路径是重复的；
-解码它应该会产生类似“Good food”的输出。
-
-HERCULES is trained to encode sentences
-from reviews as paths through a hierarchical discrete
-latent space (top). At inference time, we encode all
-sentences from the input reviews, and identify frequent
-paths or subpaths to use for the summary (bottom). The
-consensus opinion from the three example inputs is that
-the food is good, so the subpath shown in red is repeated;
-decoding it should result in an output like "Good food".
-
+推理（底部）：对输入评论中的所有句子进行编码，并确定用于摘要的出现频次高的路径或子路径。图中将三个句子“Delicious burgers”，“The pizzas are great”，“The room 
+was dirty”输入编码，聚合得到的一致意见（公共子路径）是“Good food”，图中红色显示的子路径是重复的（出现两次，频次最高），解码后应该会产生类似“Good food”的输出。
