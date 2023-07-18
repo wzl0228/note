@@ -1,1 +1,42 @@
-# UniSumm and SummZoo: Unified Model and Diverse Benchmark for Few-Shot Summarization
+# UNISUMM and SUMMZOO: Unified Model and Diverse Benchmark for Few-Shot Summarization
+
+[原论文地址](https://aclanthology.org/2023.acl-long.718.pdf)
+
+[代码地址](https://github.com/microsoft/UniSumm)
+
+## 面临问题
+
+目前的小样本摘要模型的训练范式忽略了各式各样数据集中潜在的可共享知识。
+
+### 小样本文本摘要基线模型
+在预训练模型的基础上，prefix-tuning在许多小样本文本生成任务中表现出了强大的性能。
+
+fine-tuning需要微调语言模型所有参数，每个任务都需要保存一遍所有的模型参数。prefix-tuning致力于如何不改变语言模型参数的方式，增加一些任务相关的（task-specific）额外的参数，希望效果甚至超过finetune（降本增效）
+
+前缀调整（Prefix-tuning） 在语言模型中添加额外的、可训练的参数作为前缀（Prefix），并在训练过程中冻结语言模型的参数，仅调整前缀参数。但相关研究表明，prefix-tuning在文本摘要表现上并不稳定，有时甚至劣于一般的精调方法（fine-tuning）。这可能是因为语言模型本身的预训练任务与文本摘要任务训练目标间存在巨大差距。
+
+另一方面，尽管存在各式各样的文本摘要数据集，每当有新的文本摘要数据集提出时，许多研究还是仅在新数据集上对模型进行训练（调PLM）。这种忽视了原本已有数据集的方式，造成了一种标注和知识的浪费，并且这可能会限制模型的泛化和自适应能力。
+
+### 小样本文本摘要基准数据
+目前小样本文本摘要研究缺乏一个统一的评价基准。过去的研究一方面集中只关注一类文本的研究（如：新闻摘要或对话摘要），这导致很难评估模型在不同类型文本上的泛化能力。
+
+另一方面，过去研究训练所用的样本并不公开。而小样本学习对数据非常敏感，这会造成样本选择误差（Sample Selection Bias）的问题。
+
+![image](1.png)
+
+这两点问题导致过去小样本文本摘要的研究之间无法比较。
+
+## 本论文思想
+提出了UNISUMM来解决问题：一种可以利用以往摘要数据进行预训练并通过前缀调整在未见过的小样本文本摘要任务（unseen task）上表现出色的模型。
+
+提出了SUMMZOO：一个包含多样文本摘要任务并能够分析模型稳健性的小样本文本摘要基准数据集。
+
+## UNISUMM
+
+
+
+
+
+
+
+
