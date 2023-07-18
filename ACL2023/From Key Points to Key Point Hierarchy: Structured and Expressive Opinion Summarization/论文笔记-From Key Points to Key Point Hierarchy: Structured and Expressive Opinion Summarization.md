@@ -44,3 +44,4 @@ KPH：H=(v,ε) H是一个有向森林，即有向无环图（DAG），每个结�
 
 ![image](2.png)
 
+![image](3.png)
