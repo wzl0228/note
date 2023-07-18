@@ -116,3 +116,4 @@ SUMMZOO基于两个原则：任务多样性，评估鲁棒性
 1. 模型评估对比GPT3.5和UNISUM的R2指标，GPT用的1样本，UNISUM用的10样本/100样本，GPT3/5/10样本的效果会比UNISUM的指标高？
 2. 前缀调整第一次了解到（2021年提出的），目前还是fintune的方法更广泛应用？（HuggingFace finetune），结合最近在做的项目，大多数PLM还是考虑非少样本的情况微调，这种少样本方法适用场景是否广泛？
 3. 多任务的prefix-tuning是否多任务fine-tuning更耗费GPU资源？ 样本量大时还是由优先考虑fine-tuning？单任务的时候呢？
+4. prefix-tuning技术可以提高finetune效率，P-tuningv2版本主要是基于P-tuning和prefix-tuning技术（chatglm应用p-tuningv2已有性能提高）  [P-tuningv2原论文（ACL2022）](https://arxiv.org/pdf/2110.07602.pdf)
