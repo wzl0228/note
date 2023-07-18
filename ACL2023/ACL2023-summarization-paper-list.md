@@ -4,7 +4,7 @@
 2. Generating EDU Extracts for Plan-Guided Summary Re-Ranking
 3. CrossSum: Beyond English-Centric Cross-Lingual Summarization for 1,500+ Language Pairs
 4. SIMSUM: Document-level Text Simplification via Simultaneous Summarization
-5. From Key Points to Key Point Hierarchy: Structured and Expressive Opinion Summarization
+5. [From Key Points to Key Point Hierarchy: Structured and Expressive Opinion Summarization](https://aclanthology.org/2023.acl-long.52.pdf)
 6. Improving the Robustness of Summarization Systems with Dual Augmentation
 7. UniSumm and SummZoo: Unified Model and Diverse Benchmark for Few-Shot Summarization
 8. Revisiting Cross-Lingual Summarization: A Corpus-based Study and A New Benchmark with Improved Annotation
