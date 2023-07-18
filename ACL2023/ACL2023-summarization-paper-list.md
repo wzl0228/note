@@ -6,7 +6,7 @@
 4. SIMSUM: Document-level Text Simplification via Simultaneous Summarization
 5. [From Key Points to Key Point Hierarchy: Structured and Expressive Opinion Summarization](https://aclanthology.org/2023.acl-long.52.pdf)
 6. Improving the Robustness of Summarization Systems with Dual Augmentation
-7. UniSumm and SummZoo: Unified Model and Diverse Benchmark for Few-Shot Summarization
+7. [UniSumm and SummZoo: Unified Model and Diverse Benchmark for Few-Shot Summarization](https://aclanthology.org/2023.acl-long.718.pdf)
 8. Revisiting Cross-Lingual Summarization: A Corpus-based Study and A New Benchmark with Improved Annotation
 9. Cross-lingual Science Journalism: Select, Simplify and Rewrite Summaries for Non-expert Readers
 10. Reference Matters: Benchmarking Factual Error Correction for Dialogue Summarization with Fine-grained Evaluation Framework
