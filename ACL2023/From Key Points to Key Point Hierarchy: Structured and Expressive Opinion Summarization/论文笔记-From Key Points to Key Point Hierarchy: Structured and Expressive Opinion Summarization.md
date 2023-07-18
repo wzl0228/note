@@ -2,7 +2,7 @@
 
 [原论文地址](https://aclanthology.org/2023.acl-long.52.pdf)
 
-[github仓库地址](https://aclanthology.org/2023.acl-long.52.pdf)
+[github仓库地址](https://github.com/IBM/kpa-hierarchy)
 
 ## 面临问题
 Key Point Analysis（KPA，关键点分析）的局限性：
@@ -45,3 +45,59 @@ KPH：H=(v,ε) H是一个有向森林，即有向无环图（DAG），每个结�
 ![image](2.png)
 
 ![image](3.png)
+
+## THINKP数据集
+手动构建（作者在论文附录中给出了数据标注指南）
+
+包含积极、消极（分别的）关键点摘要，源数据来源：Yelp、Amazon
+
+数据集的统计数据：
+
+![image](4.png)
+
+THINKP数据-Hotel1.txt-“树”的形式举例：
+```
+The show was very entertaining!
+	|- Some of the dancing and gymnastics are amazing.
+		|- Last act and dance was so fun!
+	|- The ambiance rocks.
+		|- Costumes were beautiful.
+		|- The colors were fun and vibrant.
+		|- The music and acoustics were amazing.
+			|- The sound is great every where.
+			|- the soundtrack CD to the show is awesome!
+	|- The choreography with the music is great.
+	|- Great for kids!
+		|- Great for a family.
+	|- The different settings was pretty cool.
+	|- The energy is great.
+	|- The performers are so extremely talented.
+		|- the skaters were awesome.
+	|- The pre-show acts are hilarious.
+The theatre is great.
+	|- All seats are good seats.; Any seat has a good view.
+	|- Balcony seats are the best seats hands down.
+	|- Nosebleed seats are the best!
+	|- Stage has unique angles.
+	|- The entrance is absolutely beautiful.
+	|- The seats were very comfortable.
+	|- The stage is centered which is really nice.
+	|- The theater is custom built for the show.
+	|- The theater is small and intimate.
+Ticket price was great.
+The drinks were actually reasonably priced.
+The staff were courteous and really helpful.
+No issues in or out.
+Starts on time too !
+```
+THINKP数据-HOTEL1-json格式举例：
+```
+{"viz_file_name": "HOTEL1.txt", "kps": ["The music and acoustics were amazing.", "The show was very entertaining!", "Some of the dancing and gymnastics are amazing.", "All seats are good seats.", "Any seat has a good view.", "The choreography with the music is great.", "The performers are so extremely talented.", "Costumes were beautiful.", "The energy is great.", "The theatre is great.", "Ticket price was great.", "The ambiance rocks.", "The theater is small and intimate.", "The colors were fun and vibrant.", "Stage has unique angles.", "The stage is centered which is really nice.", "the soundtrack CD to the show is awesome!", "Last act and dance was so fun!", "The sound is great every where.", "Great for kids!", "the skaters were awesome.", "Great for a family.", "The different settings was pretty cool.", "The seats were very comfortable.", "The entrance is absolutely beautiful.", "The drinks were actually reasonably priced.", "Balcony seats are the best seats hands down.", "The theater is custom built for the show.", "The staff were courteous and really helpful.", "Nosebleed seats are the best!", "The pre-show acts are hilarious.", "No issues in or out.", "Starts on time too !"], "clusters": [[0], [1], [2], [3, 4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16], [17], [18], [19], [20], [21], [22], [23], [24], [25], [26], [27], [28], [29], [30], [31], [32]], "relations": [[8, 3], [8, 25], [8, 28], [8, 13], [8, 23], [8, 22], [8, 14], [8, 26], [8, 11], [1, 2], [1, 10], [1, 4], [1, 18], [1, 21], [1, 7], [1, 5], [1, 29], [5, 19], [18, 20], [10, 6], [10, 12], [10, 0], [0, 17], [0, 15], [2, 16]], "topic": "mz9ltimeAIy2c2qf5ctljw_pos", "domain": "Hotel"}
+```
+
+## 自动构建KPH数据
+关键是评分关键点之间的关系
+Baseline：
+1. NLI方法 RoBERTa fine-tuned on MNLI
+2. KPA-Match RoBERTa trained on Arg-KP
+引入方向分布相似性：
