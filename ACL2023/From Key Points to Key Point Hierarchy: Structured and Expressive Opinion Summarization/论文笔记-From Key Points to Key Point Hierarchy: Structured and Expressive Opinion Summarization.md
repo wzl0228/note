@@ -96,8 +96,31 @@ THINKP数据-HOTEL1-json格式举例：
 ```
 
 ## 自动构建KPH数据
-关键是评分关键点之间的关系
-Baseline：
-1. NLI方法 RoBERTa fine-tuned on MNLI
-2. KPA-Match RoBERTa trained on Arg-KP
-引入方向分布相似性：
+### 评分（关键点之间的关系）
+1. Baseline：NLI方法（RoBERTa fine-tuned on MNLI）/KPA-Match（RoBERTa trained on Arg-KP）
+2. 引入方向分布相似性：希望KPH中关键点对应的匹配能更加合理。APinc、BinInc...
+3. 将NLI与分布方法结合：NLI+BinInc-Avg、NLI+BinInc-WL
+
+### 层次构建
+希望生成一个KPH，使得该结构产生的成对关键点关系集合与局部方向性得分一致：高分关系应包括在内，低分关系应排除在外。文中探索了几个用于构建KPH的选择。（每一种都在局部得分上采用了决策阈值τ，这需要在一些开发数据上进行调整。）
+
+1. Reduced Forest
+2. TNCF
+3. Greedy
+4. Greedy GS
+> 具体方法后面需要用的时候再看
+
+## 评估
+### “预测局部关键点对关系”方法评估。
+准确率-召回率曲线（目标是获得同时具有高准确度和召回率的分类器，在图形上的表现是曲线与坐标轴围成的区域面积尽可能大。）
+
+![image](5.png)
+
+![image](6.png)
+
+局部方法最好的是：NLI+BinInc-WL
+
+### “层次构建” 方法评估
+
+![image](7.png)
+
