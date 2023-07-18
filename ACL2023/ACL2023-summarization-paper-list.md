@@ -12,7 +12,7 @@
 10. Reference Matters: Benchmarking Factual Error Correction for Dialogue Summarization with Fine-grained Evaluation Framework
 11. Dialogue Summarization with Static-Dynamic Structure Fusion Graph
 12. Z-Code++: A Pre-trained Language Model Optimized for Abstractive Summarization
-13. [Attributable and Scalable Opinion Summarization](https://aclanthology.org/2023.acl-long.473.pdf)
+13. [Attributable and Scalable Opinion Summarization](https://aclanthology.org/2023.acl-long.473.pdf) [笔记](https://github.com/wzl0228/note/blob/main/ACL2023/Attributable%20and%20Scalable%20Opinion%20Summarization/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0-Attributable%20and%20Scalable%20Opinion%20Summarization.md)
 14. MeetingBank: A Benchmark Dataset for Meeting Summarization
 15. ExplainMeetSum: A Dataset for Explainable Meeting Summarization Aligned with Human Intent
 16. Do You Hear The People Sing? Key Point Analysis via Iterative Clustering and Abstractive Summarisation
