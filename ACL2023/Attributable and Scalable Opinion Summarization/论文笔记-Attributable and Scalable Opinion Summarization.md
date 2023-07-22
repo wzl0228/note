@@ -107,4 +107,5 @@ q1:D旨在表示分层信息，因此每个层级编码上的分布是softmax分
 2. 该模型的评估参数用了R-2，R-L。没有用R-1？当然可能该模型生成摘要的效果偏向转述（公共子路径）？
 3. 目前做生成任务，大概率都是要与chatGPT（InstructGPT）的效果进行对比的，这也是我们之后模型评估中无法避免的点。
 4. 该模型的评估还采用了基于QA的评估方法，以及基于NLI的评估方法（SummaC），这也是从之前了解学姐做的工作，发现大家慢慢不只用ROUGE指标（存在问题）做评估。
-5. HERCULESext和HERCULESabs有啥区别？论文中有提到吗？
+5. HERCULESext和HERCULESabs有啥区别？论文中有提到吗？**可能ext是直接抽取出句子（公共子路径）作为输出，abs是抽取出句子（公共子路径）生成后的结果**
+6. 具体构建q1:D的方法参考该论文的上一篇工作：[Hierarchical Sketch Induction for Paraphrase Generation](https://aclanthology.org/2022.acl-long.178.pdf)
