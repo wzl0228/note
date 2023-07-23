@@ -1,7 +1,7 @@
 # [ACL2023 Main Conference Paper](https://2023.aclweb.org/program/accepted_main_conference/)
 ## 摘要相关论文（"summar..." in ACL2023 Main Conference）
 1. What are the Desired Characteristics of Calibration Sets? Identifying Correlates on Long Form Scientific Summarization
-2. Generating EDU Extracts for Plan-Guided Summary Re-Ranking
+2. [Generating EDU Extracts for Plan-Guided Summary Re-Ranking](https://aclanthology.org/2023.acl-long.151.pdf)
 3. CrossSum: Beyond English-Centric Cross-Lingual Summarization for 1,500+ Language Pairs
 4. SIMSUM: Document-level Text Simplification via Simultaneous Summarization
 5. [From Key Points to Key Point Hierarchy: Structured and Expressive Opinion Summarization](https://aclanthology.org/2023.acl-long.52.pdf) | [笔记](https://github.com/wzl0228/note/blob/main/ACL2023/From%20Key%20Points%20to%20Key%20Point%20Hierarchy:%20Structured%20and%20Expressive%20Opinion%20Summarization/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0-From%20Key%20Points%20to%20Key%20Point%20Hierarchy:%20Structured%20and%20Expressive%20Opinion%20Summarization.md)
