@@ -69,6 +69,16 @@ $p_{MT}$
 
 ![image](4.png)
 
+首先，把原始数据处理成key-value对的形式。其中key为预训练模型表征的源语句+目标语句的前缀，一般使用预训练模型decoder的最后一层隐藏层向量作为<源语句，目标语句前缀>表征，value则为目标语句前缀的下一个单词。
+
+图中（s;ti-1,ti）:
+("J'ai été à Paris. ; I have", "been")
+("J'avais été à la maison. ; I have", "been")
+("J'apprécie l’été ; I enjoy", "summer")
+("J'ai ma propre chambre.  ; I have", "my")
+key是从模型生成的那个最终的hidden state。value就是单纯的token本身。
+图中的key为Datastore下的Representation列：
+$k_{j}=f(s^{(n)},t_{i-1}^{(n)})$
 
 
 [扩展工作1](https://www.bilibili.com/read/cv17943179)
