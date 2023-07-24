@@ -1,6 +1,8 @@
 # NEAREST NEIGHBOR MACHINE TRANSLATION
 
-[论文地址](https://arxiv.org/pdf/2010.00710.pdf)
+[原论文地址](https://arxiv.org/pdf/2010.00710.pdf)
+
+[代码地址](https://github.com/urvashik/knnlm)
 
 ## 引言
 当前的深度学习算法主要是参数化的算法，需要通过训练数据来进行参数更新。在数据算力充足的场景下，这一类的方法是直接并有效的。但是当任务包含不同领域的数据时，就需要对其进行逐一微调，产生的成本是比较大的。并且在实际场景中，数据往往不是提前能获取完的，而是有一个逐步构建的过程。在这种常规的参数化方法不能够满足全部的需求的场景下，基于预训练好的模型，在不更新参数的前提下能用新数据提升模型效果的无参算法便有了用武之地。
@@ -61,3 +63,9 @@ Datastore构建完成后，在模型推断阶段，每次得到当前步的decod
 ![image](4.png)
 
 
+
+[扩展工作1](https://www.bilibili.com/read/cv17943179)
+
+[参考博客1](https://zhuanlan.zhihu.com/p/597681401)
+
+[参考博客2](https://zhuanlan.zhihu.com/p/479866520)
