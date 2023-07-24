@@ -69,16 +69,40 @@ $p_{MT}$
 
 ![image](4.png)
 
+**第一步：生成辅助数据库**
 首先，把原始数据处理成key-value对的形式。其中key为预训练模型表征的源语句+目标语句的前缀，一般使用预训练模型decoder的最后一层隐藏层向量作为<源语句，目标语句前缀>表征，value则为目标语句前缀的下一个单词。
 
 图中（s;ti-1,ti）:
+
 ("J'ai été à Paris. ; I have", "been")
+
 ("J'avais été à la maison. ; I have", "been")
+
 ("J'apprécie l’été ; I enjoy", "summer")
+
 ("J'ai ma propre chambre.  ; I have", "my")
+
 key是从模型生成的那个最终的hidden state。value就是单纯的token本身。
+
 图中的key为Datastore下的Representation列：
 $k_{j}=f(s^{(n)},t_{i-1}^{(n)})$
+
+**第二步：有了辅助数据库，怎么借此推断？**
+kNN-MT在生成的时候，每个时间step都会生成上下文或者说hidden state
+$f(x,{\hat{y}}_{1...t-1})$
+
+和词表上的分布
+$p(y_{t}|x,{\hat{y}}_{1...t-1})$
+。以上下文作为query，在辅助数据库里去查询和其最相似的N个键值对，距离评价用L2距离d(**对应图中的Distance**)。实践中计算L2距离用的是FAISS，这是个高性能向量搜索库。
+
+**第三步：怎么利用这些键值做推断？**
+因为我们的目标是干预kNN-MT模型最后生成的概率分布
+$p(y_{t}|x,{\hat{y}}_{1...t-1})$
+，所以一个朴素的想法就是，先键值对把转换成词表上的概率分布。利用softmax函数，把不同k-v对上，相同的v的负距离聚合（**对应图中的Normalization和Aggregation**）。T是温度，使用大于1的温度会使分布变平，并防止过度拟合最相似的检索结果。然后对原先的概率比分布做插值，
+
+$p_{MT}$
+就是
+$p(y_{t}|x,{\hat{y}}_{1...t-1})$
 
 
 [扩展工作1](https://www.bilibili.com/read/cv17943179)
