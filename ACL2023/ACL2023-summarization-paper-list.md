@@ -62,7 +62,7 @@
 ## 其余论文（挑选部分）
 Outstanding:
 1. Backpack Language Models
-2. [Cognitive Reframing of Negative Thoughts through Human-Language Model Interaction](https://aclanthology.org/2023.acl-long.555.pdf)
+2. [Cognitive Reframing of Negative Thoughts through Human-Language Model Interaction](https://aclanthology.org/2023.acl-long.555.pdf) | [笔记](https://github.com/wzl0228/note/blob/main/ACL2023/Cognitive%20Reframing%20of%20Negative%20Thoughts%20through%20Human-Language%20Model%20Interaction/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0-Cognitive%20Reframing%20of%20Negative%20Thoughts%20through%20Human-Language%20Model%20Interaction.md)
 3. Do PLMs Know and Understand Ontological Knowledge?
 4. Don’t Generate, Discriminate: A Proposal for Grounding Language Models to Real-World Environments
 5. World-to-Words: Grounded Open Vocabulary Acquisition through Fast Mapping in Vision-Language Models
