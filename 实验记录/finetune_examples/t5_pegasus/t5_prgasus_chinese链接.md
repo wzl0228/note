@@ -1,9 +1,5 @@
-[如何finetune](https://github.com/SunnyGJing/t5-pegasus-chinese)
-
-[renmada转的pytorch版本（包含与燃灯指标的对比）](https://github.com/renmada/t5-pegasus-pytorch)
-
-[（追一科技）源仓库](https://github.com/ZhuiyiTechnology/t5-pegasus)
-
-[HuggingFace t5-pegasus-base（2.75亿）模型](https://www.huggingface.co/imxly/t5-pegasus)
-
-[HuggingFace t5-pegasus-small（0.95亿）模型](https://www.huggingface.co/imxly/t5-pegasus-small)
+1. [如何finetune](https://github.com/SunnyGJing/t5-pegasus-chinese)
+2. [renmada转的pytorch版本（包含与燃灯指标的对比）](https://github.com/renmada/t5-pegasus-pytorch)
+3. [（追一科技）源仓库](https://github.com/ZhuiyiTechnology/t5-pegasus)
+4. [HuggingFace t5-pegasus-base（2.75亿）模型](https://www.huggingface.co/imxly/t5-pegasus)
+5. [HuggingFace t5-pegasus-small（0.95亿）模型](https://www.huggingface.co/imxly/t5-pegasus-small)
