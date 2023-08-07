@@ -29,7 +29,7 @@
 27. Understanding Factual Errors in Summarization: Errors, Summarizers, Datasets, Error Detectors
 28. [Towards Unifying Multi-Lingual and Cross-Lingual Summarization](https://aclanthology.org/2023.acl-long.843.pdf)
 29. Automated Metrics for Medical Multi-Document Summarization Disagree with Human Evaluations
-30. Element-aware Summarization with Large Language Models: Expert-aligned Evaluation and Chain-of-Thought Method
+30. [Element-aware Summarization with Large Language Models: Expert-aligned Evaluation and Chain-of-Thought Method](https://aclanthology.org/2023.acl-long.482.pdf)
 31. CFSum：A Coarse-to-Fine Contribution Network for Multimodal Summarization
 32. A Needle in a Haystack: An Analysis of High-Agreement Workers on MTurk for Summarization
 33. Extractive is not Faithful: An Investigation of Broad Unfaithfulness Problems in Extractive Summarization
