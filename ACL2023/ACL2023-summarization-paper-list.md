@@ -11,12 +11,12 @@
 9. Cross-lingual Science Journalism: Select, Simplify and Rewrite Summaries for Non-expert Readers
 10. Reference Matters: Benchmarking Factual Error Correction for Dialogue Summarization with Fine-grained Evaluation Framework
 11. Dialogue Summarization with Static-Dynamic Structure Fusion Graph
-12. Z-Code++: A Pre-trained Language Model Optimized for Abstractive Summarization
+12. [Z-Code++: A Pre-trained Language Model Optimized for Abstractive Summarization](https://aclanthology.org/2023.acl-long.279.pdf) | 0807组会
 13. [Attributable and Scalable Opinion Summarization](https://aclanthology.org/2023.acl-long.473.pdf) | [笔记](https://github.com/wzl0228/note/blob/main/ACL2023/Attributable%20and%20Scalable%20Opinion%20Summarization/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0-Attributable%20and%20Scalable%20Opinion%20Summarization.md)
 14. MeetingBank: A Benchmark Dataset for Meeting Summarization
 15. ExplainMeetSum: A Dataset for Explainable Meeting Summarization Aligned with Human Intent
 16. Do You Hear The People Sing? Key Point Analysis via Iterative Clustering and Abstractive Summarisation
-17. DIONYSUS: A Pre-trained Model for Low-Resource Dialogue Summarization
+17. [DIONYSUS: A Pre-trained Model for Low-Resource Dialogue Summarization](https://aclanthology.org/2023.acl-long.76.pdf) | 0807组会
 18. Summary-Oriented Vision Modeling for Multimodal Abstractive Summarization
 19. Revisiting the Gold Standard: Grounding Summarization Evaluation with Robust Human Evaluation
 20. On Improving Summarization Factual Consistency from Natural Language Feedback
@@ -37,7 +37,7 @@
 35. Towards Understanding Omission in Dialogue Summarization
 36. Toward Expanding the Scope of Radiology Report Summarization to Multiple Anatomies and Modalities
 37. Improving Factuality of Abstractive Summarization without Sacrificing Summary Quality
-38. Multi-Document Summarization with Centroid-Based Pretraining
+38. [Multi-Document Summarization with Centroid-Based Pretraining](https://aclanthology.org/2023.acl-short.13.pdf) | 0807组会
 39. Summarizing, Simplifying, and Synthesizing Medical Evidence using GPT-3 (with Varying Success)
 40. Balancing Lexical and Semantic Quality in Abstractive Summarization
 41. Abstractive Summarizers are Excellent Extractive Summarizers
