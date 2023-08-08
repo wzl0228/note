@@ -23,7 +23,7 @@
 21. Compositional Data Augmentation for Abstractive Conversation Summarization
 22. Socratic Pretraining: Question-Driven Pretraining for Controllable Summarization
 23. Concise Answers to Complex Questions: Summarization of Long-form Answers
-24. [Incorporating Distributions of Discourse Structure for Long Document Abstractive Summarization](https://aclanthology.org/2023.acl-long.306.pdf)
+24. [Incorporating Distributions of Discourse Structure for Long Document Abstractive Summarization](https://aclanthology.org/2023.acl-long.306.pdf) | [笔记](https://github.com/wzl0228/note/blob/main/ACL2023/Incorporating%20Distributions%20of%20Discourse%20Structure%20for%20Long%20Document%20Abstractive%20Summarization/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0-Incorporating%20Distributions%20of%20Discourse%20Structure%20for%20Long%20Document%20Abstractive%20Summarization.md)
 25. Factually Consistent Summarization via Reinforcement Learning with Textual Entailment Feedback
 26. Unsupervised Extractive Summarization of Emotion Triggers
 27. Understanding Factual Errors in Summarization: Errors, Summarizers, Datasets, Error Detectors
