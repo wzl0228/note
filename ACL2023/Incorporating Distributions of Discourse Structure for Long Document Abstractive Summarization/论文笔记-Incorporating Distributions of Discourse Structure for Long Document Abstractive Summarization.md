@@ -37,7 +37,41 @@ $p(edu_{i},edu_{j})=0$
 ### 2. 如何得到RST Sparse Attention
 本能提出的RSTformer以话语感知的方式将LDD合并到Longformer编码的每一层中。每一层share相同的configuration，模型的一层架构如下：
 ![image](4.png)
+1. 潜在表示：
+$X∈R^{T×d_{model}×h}$
 
+LDD：
+$LDD∈R^{T×d_{model}×h}$
+，其中
+$d_{model}$
+是隐藏层大小，h是注意力头的数量。
 
+多头注意力的
+$q,k,v∈R^{d_{model}×d×h}$
+和潜在表示X计算得到：
+$Q,K,V∈R^{T×d×h}$
+其中
+$d=d_{model}/h$
+，得到注意力的权重矩阵
+$S=\frac{Q·K^T}{\sqrt{d}}$
 
+2. Longformer利用两组投影，
+$Q_{s},K_{s},V{s}$
+计算滑动窗口注意力的注意力得分，
+$Q_{g},K_{g},V{g}$
+来计算全局注意力的注意力分数。
+
+通过chunk，
+$QK_{T}$
+得到
+$S∈R^{T×(w+1)×h}$
+，LDD得到
+$LDD∈R^{T×(w+1)×h}$
+，V得到
+$V∈R^{T×(w+1)×h}$
+
+3. 将S与LDD元素乘，再通过softmax得到N（语篇结构信息注入注意力分布），每个注意力头都被注入了一个特定关系l的不同话语矩阵
+$LDD_{l}$
+
+4. 最后将N与V相乘得到该层的注意力权重M，并把M传到下一个Longformer编码器层进一步计算。
 
