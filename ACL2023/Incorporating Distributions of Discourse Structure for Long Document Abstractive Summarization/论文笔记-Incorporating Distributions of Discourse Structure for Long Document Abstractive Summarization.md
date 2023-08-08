@@ -13,7 +13,9 @@
 
 ## 主要工作
 > RST（Rhetorical Structure Theory，修辞结构理论）：作为一个话语框架，旨在在文档层面阐明句子之间的内在关系。下面是一个RST树的例子：
+>
 > ![image](1.png)
+>
 > EDU1 作为Elaboration的核心（Nucleus），EDU2&EDU3作为为Elaboration的附属（Satellite）。concession是Elaboration的下一级，其中：EDU3 作为concession的核心，EDU2作为concession的附属。
 >
 > 重要性来说，EDU1>EDU2>EDU3。如果省略EDU2，EDU1和EDU2之间的阐述关系仍然成立，但如果去除EDU3，EDU1和EDU2间的阐述关系将不成立，并且连贯性也会失去。
@@ -36,7 +38,9 @@ $p(edu_{i},edu_{j})=0$
 
 ### 2. 如何得到RST Sparse Attention
 本能提出的RSTformer以话语感知的方式将LDD合并到Longformer编码的每一层中。每一层share相同的configuration，模型的一层架构如下：
+
 ![image](4.png)
+
 1. 潜在表示：
 $X∈R^{T×d_{model}×h}$
 
@@ -76,10 +80,12 @@ $LDD_{l}$
 4. 最后将N与V相乘得到该层的注意力权重M，并把M传到下一个Longformer编码器层进一步计算。
 
 ## 实验结果
+
 ![image](5.png)
 
 ## 消融实验
 ![image](6.png)
+
 WAC（Without Attention Calculation）：注意力权重直接用LDD代替
 
 RIA（Random Identical Attention）：将LDD设定为随机固定值，不考虑话语关系的概率。
@@ -90,8 +96,10 @@ RIA（Random Identical Attention）：将LDD设定为随机固定值，不考虑
 
 ## 评估生成新单词的能力和事实一致性
 N-gran novelty的评估结果：
+
 ![image](7.png)
 
 SummaCConv的评估结果：
+
 ![image](7.png)
 
