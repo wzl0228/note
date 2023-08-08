@@ -78,3 +78,20 @@ $LDD_{l}$
 ## 实验结果
 ![image](5.png)
 
+## 消融实验
+![image](6.png)
+WAC（Without Attention Calculation）：注意力权重直接用LDD代替
+
+RIA（Random Identical Attention）：将LDD设定为随机固定值，不考虑话语关系的概率。
+
+说明：1. LDD无法代替注意力 2. 随机干扰会影响Longformer的注意力。
+
+从而说明LDD+attention的方法的合理性
+
+## 评估生成新单词的能力和事实一致性
+N-gran novelty的评估结果：
+![image](7.png)
+
+SummaCConv的评估结果：
+![image](7.png)
+
