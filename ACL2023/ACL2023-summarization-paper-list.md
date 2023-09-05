@@ -66,3 +66,4 @@ Outstanding:
 3. Do PLMs Know and Understand Ontological Knowledge?
 4. Don’t Generate, Discriminate: A Proposal for Grounding Language Models to Real-World Environments
 5. World-to-Words: Grounded Open Vocabulary Acquisition through Fast Mapping in Vision-Language Models
+6. [Post-Abstention: Towards Reliably Re-Attempting the Abstained Instances in QA](https://aclanthology.org/2023.acl-long.55.pdf)
